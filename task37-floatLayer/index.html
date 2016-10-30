@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ui组件浮出层</title>
+	<style>
+		#divFloat,#divFloat2 {
+			position: absolute;
+			width: 400px;
+			height: 250px;
+		}
+		#divFloat{
+			left: 0;
+		}
+		#divFloat2{
+			right: 0;
+		}
+		* {
+		    font-family: '微软雅黑';
+		    font-size: 24px;
+		    -webkit-user-select: none;
+		    -moz-user-select: none;
+		    -ms-user-select: none;
+		    user-select: none;
+		}
+
+		body {
+		    text-align: center;
+		    margin: 0px;
+		    height: 2000px;
+		}
+
+		#btnLogin,#btnLogin2 {
+		    border-radius: 20px;
+		    width: 240px;
+		    height: 48px;
+		    outline: none;
+		    margin-top: 50px;
+		}
+
+		#divFloat,#divFloat2 {
+		    border: 2px solid gray;
+		    padding: 20px;
+		    text-align: left;
+		    border-radius: 20px;
+		    background-color: rgb(240, 240, 240);
+		}
+
+		#divFloat form,#divFloat2 form {
+		    text-align: right;
+		}
+
+		#divFloat form input,#divFloat2 form input {
+		    width: 90px;
+		    /*border-radius: 10px;*/
+		    outline: none;
+		    color: white;
+		}
+
+		#divFloat form input:first-child,#divFloat2 form input:first-child {
+		    background-color: rgb(34, 185, 60);
+		}
+
+		#divFloat form input:last-child,#divFloat2 form input:last-child {
+		    background-color: rgb(204, 85, 92);
+		}
+	</style>
+</head>
+<body>
+	<input type="button" value="弹出层1" id="btnLogin"></input>
+	<div id="divFloat">
+        <h1>弹出层1</h1>
+        <p>这是一个弹出层，可通过拖动改变位置
+            <br/>点击确定和取消消失弹出层</p>
+        <form>
+            <input type="button" value="确定" id="btnSure"></input>
+            <input type="button" value="取消" id="btnCancel"></input>
+        </form>
+    </div>
+    <input type="button" value="弹出层2" id="btnLogin2"></input>
+	<div id="divFloat2">
+        <h1>弹出层2</h1>
+        <p>这是一个弹出层，可通过拖动改变位置
+            <br/>点击确定和取消消失弹出层</p>
+        <form>
+            <input type="button" value="确定" id="btnSure2"></input>
+            <input type="button" value="取消" id="btnCancel2"></input>
+        </form>
+    </div>
+	<script src="floatui.js"></script>
+    <script>
+    	window.onload = function () {
+    		new floatui("divFloat","btnSure","btnCancel","btnLogin");
+    		new floatui("divFloat2","btnSure2","btnCancel2","btnLogin2");
+    	}
+    </script>
+</body>
+</html>
