@@ -11,5 +11,11 @@ http://www.xingbofeng.com/baidu-ife-exercise/my-dragLayer/
 UI组件之浮出层
 http://www.xingbofeng.com/baidu-ife-exercise/task37-floatLayer/
 ## task38&39-tableLayer
-http://www.xingbofeng.com/baidu-ife-exercise/task38&39-tableLayer/
+
 UI组件之排序表格
+http://www.xingbofeng.com/baidu-ife-exercise/task38&39-tableLayer/
+
+## task40-DateLayer-By-React
+
+UI组件之日历表，在本组件中运用了react，并通过打包生成的组件。核心代码在src目录下。
+http://www.xingbofeng.com/baidu-ife-exercise/task40-DateLayer-By-React/
