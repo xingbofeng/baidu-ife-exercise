@@ -19,3 +19,7 @@ http://www.xingbofeng.com/baidu-ife-exercise/task38&39-tableLayer/
 
 UI组件之日历表，在本组件中运用了react，并通过打包生成的组件。核心代码在src目录下。
 http://www.xingbofeng.com/baidu-ife-exercise/task40-DateLayer-By-React/
+
+## task10-flexbox
+flex布局的小练习
+http://www.xingbofeng.com/baidu-ife-exercise/task10-flexbox/
