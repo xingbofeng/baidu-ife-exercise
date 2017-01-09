@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>BaiDu Exercise</title>
+</head>
+<body>
+	<div class="sortBox">
+		<h1>三个排序算法：请输入三个数组，点击确定打开控制台查看结果</h1>
+		<input type="text" id="bubbleSort">
+		<input type="text" id="quickSort">
+		<input type="text" id="selectSort">
+		<button onclick="sort()">确定</button>
+	</div>
+	<div class="removesameBox">
+		<h1>写一个函数实现去除数组中重复的元素的功能</h1>
+		<input type="text" id="removeSame">
+		<button onclick="remove()">确定</button>
+	</div>
+	<div class="insertBox">
+		<h1 id="insertH1">用原生dom实现</h1>
+		<button onclick="insert()">确定</button>
+	</div>
+	<div class="isArray">
+		<h1>用代码实现isArray函数，打开控制台查看</h1>
+		<button onclick="console.log(isArray([]))">确定</button>
+	</div>
+	<div class="extend">
+		<h1>用代码实现extend，实现对象的深拷贝，打开控制台查看</h1>
+		<button onclick="console.log(extend({a1: 1}, {b1: 1, b2: 2}))">确定</button>
+	</div>
+	<script src="sort.js"></script>
+	<script src="removeSame.js"></script>
+	<script src="isArray.js"></script>
+	<script src="insertAfter.js"></script>
+	<script src="extend.js"></script>
+	<script>
+		function sort() {
+			console.log(document.getElementById('bubbleSort').value.split(',').bubbleSort());
+			console.log(document.getElementById('quickSort').value.split(',').quickSort());
+			console.log(document.getElementById('selectSort').value.split(',').selectSort());
+		}
+		function remove() {
+			console.log(document.getElementById('removeSame').value.split(',').removeSame())
+		}
+		function insert() {
+			let h1 = document.createElement('h1');
+			h1.innerText = 'insertAfter方法';
+			insertAfter(h1, document.getElementById('insertH1'));
+		}
+		function function_name(argument) {
+			// body...
+		}
+	</script>
+</body>
+</html>

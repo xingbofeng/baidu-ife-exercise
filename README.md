@@ -23,3 +23,7 @@ http://www.xingbofeng.com/baidu-ife-exercise/task40-DateLayer-By-React/
 ## task10-flexbox
 flex布局的小练习
 http://www.xingbofeng.com/baidu-ife-exercise/task10-flexbox/
+
+## task0-exercise
+百度知道的实习生面试题，虽通过面试却因HC不够被拒。不管了，来年再战BAT。
+http://www.xingbofeng.com/baidu-ife-exercise/task0-exercise/
